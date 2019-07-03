@@ -22,6 +22,7 @@ public class Ltj {
     public static void main(String[] args) {
         int a;
         double b;
+        char c;
     }
 
 }

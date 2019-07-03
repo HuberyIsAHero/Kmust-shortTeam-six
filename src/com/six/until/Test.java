@@ -9,6 +9,5 @@ package com.six.until;
  */
 public class Test {
     short int a = 0;
-    int LTJ=1;
 
 }
