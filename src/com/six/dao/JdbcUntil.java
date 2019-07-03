@@ -17,6 +17,7 @@ public class JdbcUntil {
     public JdbcUntil() throws SQLException, NamingException {
         con = DBUntil.getConnectionFromPool();
         stm = con.createStatement();
+
     }
 
     /**

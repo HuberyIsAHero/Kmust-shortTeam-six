@@ -1,5 +1,6 @@
 package com.six.until;
 
+
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
@@ -13,5 +14,6 @@ public class DBUntil {
         DataSource ds = (DataSource)ctx.lookup("java:/comp/env/jdbc/mysql");
         result = ds.getConnection();
         return result;
+
     }
 }
