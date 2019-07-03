@@ -23,6 +23,9 @@ public class Ltj {
         int a;
         double b;
         char c;
+        char aa;
+        double   q;
+
     }
 
 }
