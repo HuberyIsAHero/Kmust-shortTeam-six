@@ -1,0 +1,15 @@
+login.html：登陆页面
+regist.html：注册页面
+order.html：我的XX->我的订单页面
+user.html：我的XX->账户信息页面（用户名 昵称 邮箱 手机号码）
+address.html：我的XX->收货地址页面
+bottomnav.html：首页的底部部分 
+flow1.html：我的购物车页面
+flow2.html：填写并核对订单信息页面（提交订单）
+flow3.html：订单提交成功页面
+footer.html：底部版权页面
+goods.html：单个商品详情页面
+header.html：首页的头部
+index.html：首页整体部分
+list.html：商品列表（某一类下的）
+404.html：报错页面
