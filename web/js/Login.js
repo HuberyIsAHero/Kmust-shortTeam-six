@@ -6,4 +6,5 @@
 
 function LoginTest(){
 	alert("取得函数")
+	alert("取得函数")
 }
