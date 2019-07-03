@@ -8,4 +8,5 @@ package com.six.until;
  * @createTime 2019年07月03日 11:28:00
  */
 public class Ltest {
+    int anInt;
 }

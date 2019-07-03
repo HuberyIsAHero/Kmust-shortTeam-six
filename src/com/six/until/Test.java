@@ -8,5 +8,5 @@ package com.six.until;
  * @createTime 2019年07月03日 11:10:00
  */
 public class Test {
-    //short int a = 0;
+    short int a = 0;
 }
