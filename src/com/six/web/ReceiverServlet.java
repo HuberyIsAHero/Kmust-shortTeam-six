@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.six.dao.GoodDao;
 import com.six.dao.OrderDao;
 import com.six.dao.ReceiverDao;
+import com.six.pojo.Order;
 
 import javax.naming.NamingException;
 import javax.servlet.ServletException;
@@ -41,7 +42,7 @@ public class ReceiverServlet extends HttpServlet {
             list =ReceiverDao.getReceiverList();
 
         }else if (opType.equals("getOrder")){
-            System.out.println("我进来获取Order了");
+            System.out.println("我进来获取Order了:  "+ orderId);
             list = OrderDao.getOrder(orderId);
         }else if (opType.equals("getGoods")){
             String goodId = request.getParameter("goodId");

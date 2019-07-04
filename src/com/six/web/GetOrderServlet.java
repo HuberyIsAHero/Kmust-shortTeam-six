@@ -18,15 +18,15 @@ public class GetOrderServlet extends HttpServlet {
 //      HttpSession session = req.getSession(true);
 //      String id = (String)session.getAttribute("userId");
         System.out.println("进入GetOrderServlet函数");
-        int res=0;
+        String res="";
         try{
             res= GetOrder.getOrder("1");
 
         }catch (Exception e){
-
+            e.printStackTrace();
         }
-        response.sendRedirect("flow2.html");
-        request.getRequestDispatcher("flow2.html").forward(request, response);
+        System.out.println(res);
+        response.sendRedirect("flow2.html" + "?" + "orderId="+res);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

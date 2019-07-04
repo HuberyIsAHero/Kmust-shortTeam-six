@@ -34,7 +34,7 @@ public class OrderDao {
         String shuLiang;
         String banBeng;
         String yanSe;
-        String sql = "SELECT * FROM tb_order WHERE xiaDanShiJian= '"+str+"'";
+        String sql = "SELECT * FROM tb_order WHERE orderId= '"+str+"'";
         ResultSet res = myl.query(sql);
         result = new ArrayList();
         try {
