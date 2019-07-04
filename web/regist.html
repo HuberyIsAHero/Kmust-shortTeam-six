@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="style/header.css" type="text/css">
 	<link rel="stylesheet" href="style/login.css" type="text/css">
 	<link rel="stylesheet" href="style/footer.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/Registered.js"></script>
 </head>
 <body>
 	<!-- 顶部导航 start -->
@@ -52,24 +54,32 @@
 					<ul>
 						<li>
 							<label for="">用户名：</label>
-							<input type="text" class="txt" name="username" />
+							<input type="text" class="txt" name="username" id="username"/>
 							<p>3-20位字符，可由中文、字母、数字和下划线组成</p>
 						</li>
 						<li>
 							<label for="">密码：</label>
-							<input type="password" class="txt" name="password" />
+							<input type="password" class="txt" name="password" id="password1"/>
 							<p>6-20位字符，可使用字母、数字和符号的组合，不建议使用纯数字、纯字母、纯符号</p>
 						</li>
 						<li>
 							<label for="">确认密码：</label>
-							<input type="password" class="txt" name="password" />
-							<p> <span>请再次输入密码</p>
+							<input type="password" class="txt" name="password" id="password2"/>
+							<p> <span>请再次输入密码</span></p>
 						</li>
 						<li class="checkcode">
-							<label for="">验证码：</label>
-							<input type="text"  name="checkcode" />
-							<img src="images/checkcode1.jpg" alt="" />
-							<span>看不清？<a href="">换一张</a></span>
+							<label for="">性别：</label>
+							<input type="text"  name="sex" id="sex"/>
+						</li>
+						<li class="checkcode">
+							<label for="">出生年月：</label>
+							<input type="text"  name="birthday" id="birthday"/>
+							<font style="color: #BD0000">推荐格式2019.7.4 00-00-00</font>
+						</li>
+						<li class="checkcode">
+							<label for="">邮箱：</label>
+							<input type="text" class="txt"  name="Mail" id="Mail"/>
+							<font style="color: #BD0000">推荐格式xxx@163.com；xxx@qq.com</font>
 						</li>
 						<li>
 							<label for="">&nbsp;</label>
@@ -77,7 +87,7 @@
 						</li>
 						<li>
 							<label for="">&nbsp;</label>
-							<input type="submit" value="" class="login_btn" />
+							<input type="button" value="" class="login_btn" onclick="registered()"/>
 						</li>
 					</ul>
 				</form>

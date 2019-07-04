@@ -19,6 +19,9 @@ function TestCookie(){
 				message = message + data[0].message;
 				alert(message);
 			}
+			if (data.length > 0) {
+				window.location.href = "index.html";
+			}
 		}
 	})
 }
@@ -43,8 +46,9 @@ function LoginTest(){
 				message = message + data[0].message;
 				alert(message);
 			}
+			if (data.length > 0) {
+				window.location.href = "index.html";
+			}
 		}
-
-
 	})
 }

@@ -47,41 +47,45 @@ public class ServletLogin extends HttpServlet {
        //         if (getCookieUserPwd.equals(passWord)){
                     JSONObject JO = new JSONObject();
                     JO.put("message","登录成功");
+//                    JO.put("userName",getCookieUserName);
                     js.add(JO);
            //         }
             //    }
-        }else if(userName != null && passWord != null){
+            String jsonString = js.toString();
+            System.out.println(jsonString);
+            PrintWriter out = response.getWriter();
+            out.println(jsonString);
+        }else if(userName != null && passWord != null) {
             try {
                 JdbcUntil jdbcUntil = new JdbcUntil();
                 String sql = "select * from tb_user";
                 ResultSet res = jdbcUntil.query(sql);
-                while (res.next()){
-                    if(res.getString(2).equals(userName)){
-                        if (res.getString(3).equals(passWord)){
+                while (res.next()) {
+                    if (res.getString(2).equals(userName)) {
+                        if (res.getString(3).equals(passWord)) {
                             JSONObject JO = new JSONObject();
-                            JO.put("message","登录成功");
+                            JO.put("message", "登录成功");
                             js.add(JO);
                             //用户登录成功后验证发送cookie到浏览器
-                            Cookie Name = new Cookie("userNameSix",userName);
-                            Cookie Pwd = new Cookie("passWordSix",passWord);
+                            Cookie Name = new Cookie("userNameSix", userName);
+                            Cookie Pwd = new Cookie("passWordSix", passWord);
                             response.addCookie(Name);
                             response.addCookie(Pwd);
                             //设置session 保存用户名
                             HttpSession session = request.getSession();
-                            session.setAttribute("userID",res.getString(1));
+                            session.setAttribute("userID", res.getString(1));
                         }
                     }
                 }
                 jdbcUntil.closeAll();
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
+            String jsonString = js.toString();
+            System.out.println(jsonString);
+            PrintWriter out = response.getWriter();
+            out.println(jsonString);
         }
-        String jsonString = js.toString();
-        System.out.println(jsonString);
-        PrintWriter out = response.getWriter();
-        out.println(jsonString);
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
