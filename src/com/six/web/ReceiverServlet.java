@@ -35,15 +35,14 @@ public class ReceiverServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Content-type", "text/html;charset=UTF-8");
         String opType = request.getParameter("opType");
-
+        String orderId = request.getParameter("orderId");
         List list=null;
-
         if(opType.equals("Receiver")){
             list =ReceiverDao.getReceiverList();
 
         }else if (opType.equals("getOrder")){
             System.out.println("我进来获取Order了");
-            list = OrderDao.getOrder("20190704");
+            list = OrderDao.getOrder(orderId);
         }else if (opType.equals("getGoods")){
             String goodId = request.getParameter("goodId");
             System.out.println("我进来获取Good了");

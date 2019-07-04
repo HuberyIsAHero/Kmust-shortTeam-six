@@ -80,7 +80,7 @@ function getPicture(good){
 
             $("#datalist").html(html);
             //alert(html);
-
+            window.location.href = "flow2.html?orderId=20190704";
         },
         error:function (data) {
             alert("发生错误！");

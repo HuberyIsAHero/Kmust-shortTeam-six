@@ -25,6 +25,7 @@ public class GetOrderServlet extends HttpServlet {
         }catch (Exception e){
 
         }
+        response.sendRedirect("flow2.html");
         request.getRequestDispatcher("flow2.html").forward(request, response);
     }
 

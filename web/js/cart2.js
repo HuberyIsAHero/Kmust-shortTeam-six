@@ -8,6 +8,8 @@ $(function () {
     getOrderList();
     var sum = 0;
     var count = 0;
+    var ArrOrderId = location.search.split("=");
+    var OrderId = ArrOrderId[1];
     //获取收货地址
     function getReceiver() {
         $.ajax({
