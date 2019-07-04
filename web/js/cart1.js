@@ -7,7 +7,7 @@
 $(function(){
 
 	//减少
-	$(".reduce_num").click(function(){
+	$("#reduce_num").click(function(){
 		var amount = $(this).parent().find(".amount");
 		if (parseInt($(amount).val()) <= 1){
 			alert("商品数量最少为1");
@@ -27,7 +27,7 @@ $(function(){
 	});
 
 	//增加
-	$(".add_num").click(function(){
+	$("#add_num").click(function(){
 		var amount = $(this).parent().find(".amount");
 		$(amount).val(parseInt($(amount).val()) + 1);
 		//小计

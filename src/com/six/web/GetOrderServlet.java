@@ -1,29 +1,33 @@
 package com.six.web;
 
+import com.six.dao.GetOrder;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(name = "ServletLogin",urlPatterns = "/ServletLogin")
-public class ServletLogin extends HttpServlet {
+@WebServlet(name = "GetOrderServlet", urlPatterns = "/GetOrderServlet")
+public class GetOrderServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Content-type", "text/html;charset=UTF-8");
-        String userName = request.getParameter("username");
-        String passWord = request.getParameter("password");
-//        HttpSession session = request.getSession();
-//        session.setAttribute("用户Id",userName);
-//        session.setAttribute("用户Id1",userName1);
+//      HttpSession session = req.getSession(true);
+//      String id = (String)session.getAttribute("userId");
+        System.out.println("进入GetOrderServlet函数");
+        int res=0;
+        try{
+            res= GetOrder.getOrder("1");
 
+        }catch (Exception e){
 
-        response.getWriter().println(userName+passWord);
+        }
+ //       request.getRequestDispatcher("flow2.html").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        this.doPost(request,response);
+        doPost(request,response);
     }
 }

@@ -45,7 +45,7 @@ public class JdbcUntil {
     public int executeUpdate(String sql){
         int rows = 0;
         try {
-            res = stm.executeQuery(sql);
+            rows = stm.executeUpdate(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }
