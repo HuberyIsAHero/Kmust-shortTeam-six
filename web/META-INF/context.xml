@@ -9,5 +9,5 @@
             username="root"
             driverClassName="com.mysql.jdbc.Driver"
             password="123456"
-            url="jdbc:mysql://47.100.100.11:3306/db_jdmall" />
+            url="jdbc:mysql://47.100.100.11:3306/db_jdmall?serverTimezone=GMT%2B8" />
 </Context>
