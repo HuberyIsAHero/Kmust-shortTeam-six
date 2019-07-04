@@ -81,7 +81,7 @@ function getSmallPic(goodId) {
 
             $(".cur").html(html);
             //alert(html);
-            for(var i=0; i<data.length-1; i++){
+            for(var i=0; i<data.length; i++){
                 html = "<li><a href=\"javascript:void(0);\" rel=\"{gallery: 'gal1', smallimage:" +
                     " 'images/"+data[i]+"',largeimage: 'images/"+data[i]+"'}\"><img src=\"images/"+data[i]+"\"></a></li>";
                 $(".smallpic_wrap").append(html);

@@ -19,7 +19,7 @@ $(document).ready(function(){
             url : "getGoodServlet",//请求的 URL地址
             dataType :"json",//返回的数据类型 json
             success: function (data) {
-                for(var i=0; i<data.length-1; i++){
+                for(var i=0; i<data.length; i++){
                     getPicture(data[i]);    //传取一组记录填充网页内容
                 }
 
