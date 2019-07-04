@@ -137,6 +137,8 @@ public class GoodDao {
             good.setDingJia(dingJia);
             good.setShangPinPingFen(shangPinPingFen);
         }
+        myl.closeAll();
         return good;
+
     }
 }

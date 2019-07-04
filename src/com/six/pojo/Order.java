@@ -13,6 +13,33 @@ public class Order {
     private String dingDanJinE; //订单金额
     private String xiaDanShiJian;   //下单时间
     private String dingDanZhuangTai;    //订单状态
+    private String shuLiang;
+    private String banBeng;
+    private String yanSe;
+
+    public String getShuLiang() {
+        return shuLiang;
+    }
+
+    public void setShuLiang(String shuLiang) {
+        this.shuLiang = shuLiang;
+    }
+
+    public String getBanBeng() {
+        return banBeng;
+    }
+
+    public void setBanBeng(String banBeng) {
+        this.banBeng = banBeng;
+    }
+
+    public String getYanSe() {
+        return yanSe;
+    }
+
+    public void setYanSe(String yanSe) {
+        this.yanSe = yanSe;
+    }
 
     public String getOrderId() {
         return orderId;
