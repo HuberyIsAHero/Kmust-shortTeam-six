@@ -34,7 +34,7 @@ public class getSinglePicServlet extends HttpServlet {
             e.printStackTrace();
         }
         PrintWriter out = response.getWriter();
-        System.out.println(color);
+        //System.out.println(color);
         out.print(color);
     }
 

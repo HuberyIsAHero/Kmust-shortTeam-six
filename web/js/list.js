@@ -43,9 +43,6 @@ function getPicture(good){
             url : "getSinglePicServlet",//请求的 URL地址
             dataType :"text",//返回的数据类型 json
             success: function (data) {
-                //alert(data);
-                //html = "<p>哈哈哈哈哈</p>";
-                //alert(good.dingJia);
                 html = '<li><dl><dt><a href=\"goods.html?goodId='+good.goodId+'\"><img src='+ '\"images/'+data+'\" alt=\"\"/></a></dt>' +'<dd><a href='+
                     '\"goods.html\">'+good.shangPinMingCheng+'</a></dd><dd><strong>¥'+good.benDianJia+'</strong></dd><dd><a href=\"goods.html\">'+
                     '<em>评分：'+good.shangPinPingFen+'</em></a></dd></dl></li>';
