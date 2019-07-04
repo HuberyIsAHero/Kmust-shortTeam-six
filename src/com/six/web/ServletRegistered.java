@@ -70,7 +70,7 @@ public class ServletRegistered extends HttpServlet {
                 jsonObject.put("Message","很遗憾,注册失败，用户名存在");
                 jsonArray.add(jsonObject);
                 String JsonString = jsonArray.toJSONString();
-                System.out.println(JsonString);
+                //System.out.println(JsonString);
                 PrintWriter out = response.getWriter();
                 out.println(JsonString);
             }
