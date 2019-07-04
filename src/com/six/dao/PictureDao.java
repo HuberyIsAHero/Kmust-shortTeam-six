@@ -19,13 +19,13 @@ public class PictureDao {
         JdbcUntil myl = new JdbcUntil();
         String pirPre = "com" + goodId + "w";   //图片前缀
         String sql = "select picId from tb_picture where goodId=\"" + goodId + "\" and picId like \"" + pirPre + "1%\"";
-        System.out.println(sql);
+        //System.out.println(sql);
         ResultSet res_color = myl.query(sql);
         String color = "";
         while (res_color.next()) {
             color = res_color.getString(1);
         }
-        System.out.println(color);
+        //System.out.println(color);
         myl.closeAll();
         return color;
     }

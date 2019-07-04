@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.mysql.cj.xdevapi.JsonArray;
 import com.six.dao.JdbcUntil;
-import com.sun.source.tree.CatchTree;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
