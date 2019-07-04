@@ -4,12 +4,12 @@
 @时间：2013年11月14日
 */
 $(function () {
+    var ArrOrderId = location.search.split("=");
+    var OrderId = ArrOrderId[1];
     getReceiver();
     getOrderList();
     var sum = 0;
     var count = 0;
-    var ArrOrderId = location.search.split("=");
-    var OrderId = ArrOrderId[1];
     //获取收货地址
     function getReceiver() {
         $.ajax({
@@ -53,7 +53,8 @@ $(function () {
             async: false,
             type: "get",    //请求类型
             data: {
-                opType: "getOrder"
+                opType: "getOrder",
+                orderId: OrderId
             },
             url: "receiver",//请求的 URL地址
             dataType: "json",//返回的数据类型 json

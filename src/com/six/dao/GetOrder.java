@@ -28,12 +28,14 @@ import java.util.List;
  * @since 1.0.0
  */
 public class GetOrder {
-    public static int getOrder(String user_Id) throws SQLException, NamingException {
+    public static String getOrder(String user_Id) throws SQLException, NamingException {
         JdbcUntil myl = new JdbcUntil();
         String sql = "select * from tb_cart where userId="+user_Id;
         ResultSet res_from_cart = null;
         res_from_cart = myl.query(sql);
         int res=0;
+        SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd.HH:mm:ss");//设置日期格式
+        String time = df.format(new Date());
         while (res_from_cart.next()){
              String userId;  //用户id
              String goodId;  //商品编号
@@ -51,25 +53,27 @@ public class GetOrder {
             danJia=res_from_cart.getString("danJia");
             shuLiang=res_from_cart.getString("shuLiang");
  //           Date date = new Date();
-            SimpleDateFormat df = new SimpleDateFormat("yyyy.MM.dd.HH:mm:ss");//设置日期格式
-            String time = df.format(new Date());
+
  //           System.out.println(df.format(new Date()));// new Date()为获取当前系统时间
 //            date.getTime();
+            JdbcUntil JdbcUntil = new JdbcUntil();
             String sqlorder = "INSERT INTO tb_order(orderId,goodId,userId,receiverId,zhiFuFangShi,dingDanJinE,xiaDanShiJian,dingDanZhuangTai,shuLiang,banben,yanse)";
             sqlorder+=" VALUES ('"+time+"','"+goodId+"','"+userId+"','"+2+"','"+"在线支付"+"','"+danJia+"','"+time+"','"+"在线"+"','"+shuLiang+"','"+banBen+"','"+yanSe+"');";
             //增加order表单的信息
-            res=myl.executeUpdate(sqlorder);
-            if(res==0){
+            int res1 = JdbcUntil.executeUpdate(sqlorder);
+            JdbcUntil.closeAll();
+            if(res1 == 0){
 
-                System.out.println("res的值为"+res);
+                System.out.println("res的值为"+res1);
                 System.out.println("sql的值为"+sqlorder);
                 System.out.println("增加order表数据失败");
             }else {
                 System.out.println("增加order表数据成功");
+              //  break;
             }
         }
         myl.closeAll();
-        return res;
+        return time;
     }
 
 
