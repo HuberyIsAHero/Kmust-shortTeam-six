@@ -9,8 +9,6 @@ public class Good {
     private String benDianJia;  //本店价
     private String shangJiaShiJian; //上架时间
     private String shangPinPingFen; //商品评分
-    private String yanSe;   //商品颜色
-    private String banBen;  //商品版本
     private String shangPinMingCheng;   //商品名称
     private String pinPai;  //商品品牌
     private String maoZhonng;   //商品毛重
@@ -59,22 +57,6 @@ public class Good {
 
     public void setShangPinPingFen(String shangPinPingFen) {
         this.shangPinPingFen = shangPinPingFen;
-    }
-
-    public String getYanSe() {
-        return yanSe;
-    }
-
-    public void setYanSe(String yanSe) {
-        this.yanSe = yanSe;
-    }
-
-    public String getBanBen() {
-        return banBen;
-    }
-
-    public void setBanBen(String banBen) {
-        this.banBen = banBen;
     }
 
     public String getShangPinMingCheng() {
