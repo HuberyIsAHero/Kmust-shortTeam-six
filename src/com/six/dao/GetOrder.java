@@ -56,10 +56,12 @@ public class GetOrder {
 
  //           System.out.println(df.format(new Date()));// new Date()为获取当前系统时间
 //            date.getTime();
+            JdbcUntil JdbcUntil = new JdbcUntil();
             String sqlorder = "INSERT INTO tb_order(orderId,goodId,userId,receiverId,zhiFuFangShi,dingDanJinE,xiaDanShiJian,dingDanZhuangTai,shuLiang,banben,yanse)";
             sqlorder+=" VALUES ('"+time+"','"+goodId+"','"+userId+"','"+2+"','"+"在线支付"+"','"+danJia+"','"+time+"','"+"在线"+"','"+shuLiang+"','"+banBen+"','"+yanSe+"');";
             //增加order表单的信息
-            int res1 = myl.executeUpdate(sqlorder);
+            int res1 = JdbcUntil.executeUpdate(sqlorder);
+            JdbcUntil.closeAll();
             if(res1 == 0){
 
                 System.out.println("res的值为"+res1);
@@ -67,7 +69,7 @@ public class GetOrder {
                 System.out.println("增加order表数据失败");
             }else {
                 System.out.println("增加order表数据成功");
-                break;
+              //  break;
             }
         }
         myl.closeAll();
