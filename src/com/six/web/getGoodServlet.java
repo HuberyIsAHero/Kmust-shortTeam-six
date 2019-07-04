@@ -31,7 +31,7 @@ public class getGoodServlet extends HttpServlet {
         //封装json
         String jsonString = JSONObject.toJSONString(result);
         PrintWriter out = response.getWriter();
-        System.out.println(jsonString);
+        //System.out.println(jsonString);
         out.println(jsonString);
     }
 

@@ -35,7 +35,7 @@ public class getSinglePicServlet extends HttpServlet {
         }
         PrintWriter out = response.getWriter();
         System.out.println(color);
-        out.println(color);
+        out.print(color);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
