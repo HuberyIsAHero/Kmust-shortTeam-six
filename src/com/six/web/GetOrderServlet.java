@@ -12,6 +12,7 @@ import java.io.IOException;
 @WebServlet(name = "GetOrderServlet", urlPatterns = "/GetOrderServlet")
 public class GetOrderServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Content-type", "text/html;charset=UTF-8");
 //      HttpSession session = req.getSession(true);
@@ -24,7 +25,7 @@ public class GetOrderServlet extends HttpServlet {
         }catch (Exception e){
 
         }
- //       request.getRequestDispatcher("flow2.html").forward(request, response);
+        request.getRequestDispatcher("flow2.html").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

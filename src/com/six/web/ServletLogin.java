@@ -82,7 +82,7 @@ public class ServletLogin extends HttpServlet {
                 e.printStackTrace();
             }
             String jsonString = js.toString();
-            //System.out.println(jsonString);
+            System.out.println(jsonString);
             PrintWriter out = response.getWriter();
             out.println(jsonString);
         }
