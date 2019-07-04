@@ -1,13 +1,10 @@
 /**
- * Ë¢ĞÂÎÒµÄ¶©µ¥
- * Îâ²ı×¿
+ * åˆ·æ–°æˆ‘çš„è®¢å•
+ * å´æ˜Œå“
  * 2019.7.4
  */
 $(document).ready(function () {
         var html = "";
-        var look = "²é¿´";
-        var datel = "É¾³ı";
-        var suc = "ÒÑ³É¹¦";
         $.ajax({
             type:"POST",
             url:"ServletOrder",
@@ -41,20 +38,20 @@ $(document).ready(function () {
                             html = html + "<td>" + userId + "</td>";
                             html = html + "<td>"+ dingDanJinE + zhiFuFangShi +"</td>";
                             html = html + "<td>"+ xiaDanShiJian +"</td>";
-                            html = html + "<td>" + suc + "</td>";
-                            html = html + "<td><a href=\"\">"+look+ "</a> | <a href=\"\">" + datel+ "</a></td>";
+                            html = html + "<td>" + "å·²æˆåŠŸ" + "</td>";
+                            html = html + "<td><a href=\"\">"+ "æŸ¥çœ‹" + "</a> | <a href=\"\">" + "åˆ é™¤" + "</a></td>";
                             html = html + "</tr>";
                             alert(html)
                             $("#datalist").html(html);
                         },
                         error : function () {
-                            alert("ÄÚ²ã³ö´í");
+                            alert("å†…å±‚å‡ºé”™");
                         }
                     })
                 }
             },
             error:function () {
-                alert("³ö´í");
+                alert("å¤–å±‚å‡ºé”™");
             }
         })
 })

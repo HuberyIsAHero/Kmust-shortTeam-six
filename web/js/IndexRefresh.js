@@ -14,9 +14,9 @@ $(document).ready(function (){
        }
     }
    if (getCookieUserName != null && getCookieUserPwd != null){
-       var Message = "欢迎尊贵的用户" +  getCookieUserName + "登录";
+       var Message = "欢迎尊贵的用户：" +  getCookieUserName;
    }else {
-       var Message = "<span>您好，欢迎来到京东!" + '<a href="+"login.html">' + "[登陆]"+ '</a><a href="login.html">'+"[免费注册]"+"</a>" + "</span>"
+       var Message = "<span>您好，欢迎来到京东!" + '<a href="login.html">' + "[登陆]"+ '</a><a href="login.html">'+"[免费注册]"+"</a>" + "</span>"
        alert(Message);
    }
 

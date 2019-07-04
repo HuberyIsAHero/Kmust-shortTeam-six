@@ -17,8 +17,8 @@ public class ServletOrderImage extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Content-type", "text/html;charset=UTF-8");
-        var userID = request.getParameter("userId");
-        var goodID = request.getParameter("goodId");
+        String userID = request.getParameter("userId");
+        String goodID = request.getParameter("goodId");
         JSONArray jsonArray = new JSONArray();
         try{
             String imagePath = PictureDao.getPic(goodID);
