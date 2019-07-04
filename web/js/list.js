@@ -22,6 +22,7 @@ $(document).ready(function(){
                 for(var i=0; i<data.length-1; i++){
                     getPicture(data[i]);    //传取一组记录填充网页内容
                 }
+
             },
             error:function (data) {
                 alert("发生错误!!!！");
