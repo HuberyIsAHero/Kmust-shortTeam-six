@@ -7,19 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2c82b01-223a-45c8-928e-86d505273fac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/six/web/doCartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/six/web/getAllPicServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/six/web/getAllPicfServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/six/dao/GoodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/six/dao/GoodDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/six/dao/PictureDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/six/dao/PictureDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/six/web/ServletLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/six/web/ServletLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/six/web/ServletOrderImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/six/web/ServletOrderImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/six/web/ServletRegistered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/six/web/ServletRegistered.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/six/web/getSingleGoodServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/six/web/getSingleGoodServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/goods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/images/com1w1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/images/com1w1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/goods.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/goods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/six/web/doCartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/six/web/doCartServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/goodsInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/goodsInfo.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,7 +23,7 @@
         <counts>
           <entry key="README" value="1" />
           <entry key="html" value="7" />
-          <entry key="java" value="36" />
+          <entry key="java" value="37" />
           <entry key="jpg" value="6" />
           <entry key="js" value="15" />
           <entry key="png" value="3" />
@@ -46,7 +34,7 @@
         <counts>
           <entry key="HTML" value="7" />
           <entry key="Image" value="9" />
-          <entry key="JAVA" value="36" />
+          <entry key="JAVA" value="37" />
           <entry key="JavaScript" value="15" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
@@ -55,16 +43,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="33" />
-          <entry key="java" value="3317" />
-          <entry key="js" value="4184" />
+          <entry key="java" value="4085" />
+          <entry key="js" value="4255" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="40" />
-          <entry key="JAVA" value="3317" />
-          <entry key="JavaScript" value="4177" />
+          <entry key="JAVA" value="4085" />
+          <entry key="JavaScript" value="4248" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -94,11 +82,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/goodsInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="196" column="61" selection-start-line="196" selection-start-column="61" selection-end-line="196" selection-end-column="61" />
+            <state relative-caret-position="441">
+              <caret line="206" column="18" lean-forward="true" selection-start-line="206" selection-start-column="18" selection-end-line="206" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#strong#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
-                <element signature="e#1097#1103#1" expanded="true" />
+                <element signature="e#1095#1101#1" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -108,8 +96,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/six/web/doCartServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            <state relative-caret-position="218">
+              <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,8 +108,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/six/web/ServletLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="75" column="56" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="56" />
+            <state relative-caret-position="-1208">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            <state relative-caret-position="336">
+              <caret line="55" column="11" lean-forward="true" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -136,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/six/dao/PictureDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+              <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,8 +158,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/six/web/getAllPicServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="34" column="32" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="34" selection-end-column="32" />
+            <state relative-caret-position="-12">
+              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/six/dao/JdbcUntil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="47" column="36" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -337,10 +343,6 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Kmust-shortTeam-six" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -350,7 +352,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562247261980" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562249528557" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -374,7 +376,23 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/order.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/dao/GoodDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/dao/JdbcUntil.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/pojo/Order.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/web/ServletLogin.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/web/ServletOrderImage.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/web/ServletRegistered.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/flow1.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/flow2.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/flow3.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/js/IndexRefresh.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/js/RefreshOrder.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/js/cart1.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/js/cart2.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/京东商城.iml</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -382,9 +400,18 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/web/ServletOrder.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/web/ServletOrderImage.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/js/RefreshOrder.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/dao/Cart1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/dao/GetOrder.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/dao/OrderDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/dao/ReceiverDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/web/CheckoutServlet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/web/GainCartServlet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/web/GainPicutreServlet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/web/GetOrderServlet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/com/six/web/ReceiverServlet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/lib/jquery-3.4.1.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/js/cart01.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -570,36 +597,36 @@
       <option name="presentableId" value="Default" />
       <updated>1562147316438</updated>
       <workItem from="1562147326600" duration="11256000" />
-      <workItem from="1562201618972" duration="40030000" />
+      <workItem from="1562201618972" duration="42421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45237000" />
+    <option name="totallyTimeSpent" value="47628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.78515005" visible="true" weight="0.18766756" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.36895162" visible="true" weight="0.18766756" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.21484992" side_tool="true" visible="true" weight="0.18766756" />
+      <window_info id="Web" order="7" sideWeight="0.6310484" side_tool="true" weight="0.18766756" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.22269504" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.3328859" weight="0.38014185" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.3328859" visible="true" weight="0.2609929" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32517985" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.25755396" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2567376" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.6671141" side_tool="true" weight="0.21582733" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.10212766" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.5078014" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32907802" />
@@ -937,13 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/six/dao/JdbcUntil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1341">
-          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/six/web/getSingleGoodServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -1016,7 +1036,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/six/dao/PictureDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="73" column="23" lean-forward="true" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+          <caret line="73" column="23" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1033,20 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/six/web/getAllPicServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="34" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/six/web/getGoodServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -1059,11 +1065,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/goodsInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="196" column="61" selection-start-line="196" selection-start-column="61" selection-end-line="196" selection-end-column="61" />
+        <state relative-caret-position="441">
+          <caret line="206" column="18" lean-forward="true" selection-start-line="206" selection-start-column="18" selection-end-line="206" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#a#0;n#strong#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
-            <element signature="e#1097#1103#1" expanded="true" />
+            <element signature="e#1095#1101#1" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -1071,15 +1077,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/six/web/ServletLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="75" column="56" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="56" />
+        <state relative-caret-position="-1208">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/six/dao/JdbcUntil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/six/web/getAllPicServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="55" column="11" lean-forward="true" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/six/web/doCartServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="218">
+          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -21,7 +21,7 @@ function getGoodInfo(goodId) {
             setMidPic(data.goodId); //设置图片
             getSmallPic(data.goodId);   //设置预浏图
             setGoodsInfo(data); //设置商品详情
-            setGoodsInfo2(data);
+            setGoodsInfo2(data.goodId);
             setAttrWords(data);
             setAttrPic(data.goodId);
         },
@@ -182,8 +182,8 @@ function setGoodsInfo(good) {
         "<li><span>上架时间：</span>"+good.shangJiaShiJian+"</li><span>商品评分："+good.shangPinPingFen+"</span></a></li> </ul>";
     $(".goodsinfo").append(html);
 }
-function setGoodsInfo2() {
-    html = "<form action=\"doCartServlet\" method=\"post\" class=\"choose\"><ul><li class=\"product\"><dl><dt>颜色：</dt><dd>" +
+function setGoodsInfo2(goodId) {
+    html = "<form action=\"doCartServlet\" method=\"get\" class=\"choose\"><ul><li class=\"product\"><dl><dt>颜色：</dt><dd>" +
         "<a class=\"selected\" href=\"javascript:;\">黑色 <input type=\"radio\" name=\"color\" value=\"黑色\" checked=\"checked\" /></a>" +
         "<a href=\"javascript:;\">白色 <input type=\"radio\" name=\"color\" value=\"白色\" /></a>" +
         "<a href=\"javascript:;\">蓝色 <input type=\"radio\" name=\"color\" value=\"蓝色\" /></a>" +
@@ -194,7 +194,7 @@ function setGoodsInfo2() {
         "<input type=\"hidden\" name=\"\" value=\"\" /></dd></dl></li><li><dl><dt>购买数量：</dt><dd>" +
         "<a href=\"javascript:;\" id=\"reduce_num\"></a><input type=\"text\" name=\"amount\" value=\"1\" class=\"amount\"/>" +
         "<a href=\"javascript:;\" id=\"add_num\"></a></dd></dl></li><li><dl><dt>&nbsp;</dt><dd>" +
-        "<input type=\"submit\" value=\"\" class=\"add_btn\" /></dd></dl></li></ul></form>";
+        "<input type=\"submit\" value=\""+goodId+"\" name =\"goodId\" class=\"add_btn\" /></dd></dl></li></ul></form>";
     $(".goodsinfo").append(html);
 }
 //5.类attr设置下面的文字内容
