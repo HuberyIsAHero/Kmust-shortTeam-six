@@ -31,6 +31,7 @@ public class GainPicutreServlet extends HttpServlet {
         }
         String jsonString;
         jsonString = JSONObject.toJSONString(list);
+        System.out.println(jsonString);
         PrintWriter out = response.getWriter();
         out.println(jsonString);
     }

@@ -30,7 +30,7 @@ import java.util.List;
 public class GetOrder {
     public static String getOrder(String user_Id) throws SQLException, NamingException {
         JdbcUntil myl = new JdbcUntil();
-        String sql = "select * from tb_cart where userId="+user_Id;
+        String sql = "select * from tb_cart where userId="+ user_Id ;
         ResultSet res_from_cart = null;
         res_from_cart = myl.query(sql);
         int res=0;

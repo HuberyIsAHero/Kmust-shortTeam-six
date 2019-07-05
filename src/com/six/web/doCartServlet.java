@@ -1,6 +1,6 @@
 package com.six.web;
 
-import com.mysql.cj.protocol.Resultset;
+//import com.mysql.cj.protocol.Resultset;
 import com.six.dao.JdbcUntil;
 
 import javax.naming.NamingException;

@@ -42,14 +42,16 @@ public class GainCartServlet extends HttpServlet {
      * 获取cart表中的数据返回给js
      */
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("进入servlet");
         resp.setCharacterEncoding("UTF-8");
         resp.setHeader("Content-type", "text/html;charset=UTF-8");
-//        HttpSession session = req.getSession(true);
-//        String id = (String)session.getAttribute("userId");
-
+       HttpSession session = req.getSession(true);
+        String id = (String)session.getAttribute("userID");
+        System.out.println(id);
+        System.out.println("进入GainCartServlet");
         List<Cart> list = new ArrayList<Cart>();
         try{
-             list = Cart1.getGrartList("1");
+             list = Cart1.getGrartList(id);
             System.out.println("进入try！！！");
         }catch (Exception e){
 
