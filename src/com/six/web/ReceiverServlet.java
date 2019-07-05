@@ -53,14 +53,27 @@ public class ReceiverServlet extends HttpServlet {
             } catch (SQLException | NamingException e) {
                 e.printStackTrace();
             }
+        }else if (opType.equals("addAddress")){
+            System.out.println("我进来addAddress了");
+
+            String receiverName = request.getParameter("receiverName");
+            String Sheng = request.getParameter("Sheng");
+            String Shi = request.getParameter("Shi");
+            String Qu =request.getParameter("Qu");
+            String xiangXiDiZhi = request.getParameter("xiangXiDiZhi");
+            String phone = request.getParameter("phone");
+            System.out.println(receiverName+Sheng+Shi+Qu+xiangXiDiZhi+phone);
+            ReceiverDao.setReceiver(receiverName,Sheng,Shi,Qu,xiangXiDiZhi,phone);
+            System.out.println("我出去addAddress");
         }
 
         //封装为json
-        String jsonString = JSONObject.toJSONString(list);
-        System.out.println(jsonString);
-        PrintWriter out = response.getWriter();
-        out.println(jsonString);
-        System.out.println("溜了溜了");
-
+        if (list!=null){
+            String jsonString = JSONObject.toJSONString(list);
+            System.out.println(jsonString);
+            PrintWriter out = response.getWriter();
+            out.println(jsonString);
+            System.out.println("溜了溜了");
+        }
     }
 }

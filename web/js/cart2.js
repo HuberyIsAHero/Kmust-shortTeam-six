@@ -35,7 +35,7 @@ $(function () {
                             " " + data[i].xiangXiDiZhi + " " + data[i].phone + "<a href=\"\">  删除</a></li>";
                     }
                 }
-                htmls += "<li><input type=\"radio\" name=\"address\" class='new_address' />使用新地址</li></ul>";
+                htmls += "<li><a href='address.html'>添加新地址</a></li></ul>";
                 $(".address_select").html(htmls);
                 $(".address_info").html(html);
             },

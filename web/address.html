@@ -14,6 +14,8 @@
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/header.js"></script>
 	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/address.js"></script>
+
 </head>
 <body>
 		<!-- 顶部导航 start -->
@@ -464,22 +466,22 @@
 		<div class="content fl ml10">
 			<div class="address_hd">
 				<h3>收货地址薄</h3>
-				<dl>
-					<dt>1.王超平 北京市 昌平区 建材城西路金燕龙办公楼一层 13555555555 </dt>
-					<dd>
-						<a href="">修改</a>
-						<a href="">删除</a>
-						<a href="">设为默认地址</a>
-					</dd>
-				</dl>
-				<dl class="last"> <!-- 最后一个dl 加类last -->
-					<dt>2.王超平 湖北省 武汉市 武昌 关山光谷软件园1号201 13333333333 </dt>
-					<dd>
-						<a href="">修改</a>
-						<a href="">删除</a>
-						<a href="">设为默认地址</a>
-					</dd>
-				</dl>
+<!--				<dl>-->
+<!--					<dt>1.王超平 北京市 昌平区 建材城西路金燕龙办公楼一层 13555555555 </dt>-->
+<!--					<dd>-->
+<!--						<a href="">修改</a>-->
+<!--						<a href="">删除</a>-->
+<!--						<a href="">设为默认地址</a>-->
+<!--					</dd>-->
+<!--				</dl>-->
+<!--				<dl class="last"> &lt;!&ndash; 最后一个dl 加类last &ndash;&gt;-->
+<!--					<dt>2.王超平 湖北省 武汉市 武昌 关山光谷软件园1号201 13333333333 </dt>-->
+<!--					<dd>-->
+<!--						<a href="">修改</a>-->
+<!--						<a href="">删除</a>-->
+<!--						<a href="">设为默认地址</a>-->
+<!--					</dd>-->
+<!--				</dl>-->
 
 			</div>
 
@@ -489,42 +491,45 @@
 						<ul>
 							<li>
 								<label for=""><span>*</span>收 货 人：</label>
-								<input type="text" name="" class="txt" />
+								<input type="text" name="" class="txt" id="receiverName" />
 							</li>
 							<li>
-								<label for=""><span>*</span>所在地区：</label>
-								<select name="" id="">
-									<option value="">请选择</option>
-									<option value="">北京</option>
-									<option value="">上海</option>
-									<option value="">天津</option>
-									<option value="">重庆</option>
-									<option value="">武汉</option>
-								</select>
+								<label for=""><span>*</span>所在省市区：</label>
+								<input type="text" name=""  class="txt" id="Sheng" />
+								<input type="text" name=""  class="txt" id="Shi" />
+								<input type="text" name=""  class="txt" id="Qu" />
+<!--								<select name="" id="Sheng">-->
+<!--									<option value="">请选择</option>-->
+<!--									<option value="">北京</option>-->
+<!--									<option value="">上海</option>-->
+<!--									<option value="">天津</option>-->
+<!--									<option value="">重庆</option>-->
+<!--									<option value="">武汉</option>-->
+<!--								</select>-->
 
-								<select name="" id="">
-									<option value="">请选择</option>
-									<option value="">朝阳区</option>
-									<option value="">东城区</option>
-									<option value="">西城区</option>
-									<option value="">海淀区</option>
-									<option value="">昌平区</option>
-								</select>
+<!--								<select name="" id="Shi">-->
+<!--									<option value="">请选择</option>-->
+<!--									<option value="">朝阳区</option>-->
+<!--									<option value="">东城区</option>-->
+<!--									<option value="">西城区</option>-->
+<!--									<option value="">海淀区</option>-->
+<!--									<option value="">昌平区</option>-->
+<!--								</select>-->
 
-								<select name="" id="">
-									<option value="">请选择</option>
-									<option value="">西二旗</option>
-									<option value="">西三旗</option>
-									<option value="">三环以内</option>
-								</select>
+<!--								<select name="" id="Qu">-->
+<!--									<option value="">请选择</option>-->
+<!--									<option value="">西二旗</option>-->
+<!--									<option value="">西三旗</option>-->
+<!--									<option value="">三环以内</option>-->
+<!--								</select>-->
 							</li>
 							<li>
 								<label for=""><span>*</span>详细地址：</label>
-								<input type="text" name="" class="txt address"  />
+								<input type="text" name="" class="txt address" id="xiangXiDiZhi" />
 							</li>
 							<li>
 								<label for=""><span>*</span>手机号码：</label>
-								<input type="text" name="" class="txt" />
+								<input type="text" name="" class="txt" id="phone" />
 							</li>
 							<li>
 								<label for="">&nbsp;</label>
@@ -532,7 +537,7 @@
 							</li>
 							<li>
 								<label for="">&nbsp;</label>
-								<input type="submit" name="" class="btn" value="保存" />
+								<input type="buttom" name="" class="btn" value="保存" onclick="addAddress(this)" />
 							</li>
 						</ul>
 					</form>
