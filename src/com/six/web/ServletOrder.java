@@ -6,10 +6,7 @@ import com.six.dao.JdbcUntil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.ResultSet;
@@ -19,24 +16,16 @@ public class ServletOrder extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Content-type", "text/html;charset=UTF-8");
-        Cookie[] cookies = request.getCookies();
-        String getCookieUserName = "1";
+        HttpSession session = request.getSession();
+        String getSessionUserName = "1";
+        getSessionUserName = (String) session.getAttribute("userID");
         JSONArray jsonArray = new JSONArray();
-        if (cookies != null) {
-            for (Cookie cookie : cookies) {
-                String tString = cookie.getName();
-                if (tString.equals("userNameSix"))
-                {
-                    getCookieUserName = cookie.getValue();
-                }
-            }
-        }
         try{
             JdbcUntil jdbcUntil = new JdbcUntil();
             String sql = "select * from tb_order where userId = ?";
             jdbcUntil.pstm = jdbcUntil.con.prepareStatement(sql);
-            jdbcUntil.pstm .setString(1,getCookieUserName);
-            System.out.println(getCookieUserName);
+            jdbcUntil.pstm .setString(1,getSessionUserName);
+            System.out.println(getSessionUserName);
             ResultSet res = jdbcUntil.sysExecuteQuery();
             while (res.next()){
                 JSONObject jsonObject = new JSONObject();

@@ -41,7 +41,7 @@ $(document).ready(function () {
                             html = html + "<td>" + "已成功" + "</td>";
                             html = html + "<td><a href=\"\">"+ "查看" + "</a> | <a href=\"\">" + "删除" + "</a></td>";
                             html = html + "</tr>";
-                            alert(html)
+               //             alert(html)
                             $("#datalist").html(html);
                         },
                         error : function () {
