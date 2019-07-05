@@ -30,7 +30,7 @@ function f1() {
 
 function f() {
 //    alert("进入f（）！");
-    alert("进入函数");
+//     alert("进入函数");
     $.ajax({
         type : "get",    //请求类型
         data : {

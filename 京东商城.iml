@@ -19,8 +19,8 @@
     </content>
     <orderEntry type="jdk" jdkName="9" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="mysql-connector-java-5.1.26-bin" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.38" level="application_server_libraries" />
-    <orderEntry type="library" name="fastjson-1.2.58" level="project" />
+    <orderEntry type="library" exported="" name="fastjson-1.2.58" level="project" />
+    <orderEntry type="library" exported="" name="mysql-connector-java-8.0.12" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.122" level="application_server_libraries" />
   </component>
 </module>

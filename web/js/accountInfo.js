@@ -6,7 +6,7 @@ function account() {
     var sex = $("#sex").val();
     var mail = $("#mail").val();
     var date = $("#date").val();
-    alert("取得函数");
+    // alert("取得函数");
         $.ajax({
             url: "ReviseAccountServlet",
             type: "POST",    //请求类型

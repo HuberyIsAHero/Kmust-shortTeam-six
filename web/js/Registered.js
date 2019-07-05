@@ -4,7 +4,7 @@
  * 2019.7.4
  */
 function registered() {
-    alert("取得函数");
+    // alert("取得函数");
     var username = $("#username").val();
     var password1 = $("#password1").val();
     var password2 = $("#password2").val();

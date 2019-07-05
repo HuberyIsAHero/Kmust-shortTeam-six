@@ -27,11 +27,8 @@ function TestCookie(){
 }
 
 function LoginTest(){
-	alert("取得函数");
 	var username =  $("#username").val();
 	var password = $("#password").val();
-	alert(username);
-	alert(password);
 	$.ajax({
 		type:"POST",
 		url:"ServletLogin",

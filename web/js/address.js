@@ -10,7 +10,7 @@ function addAddress(address) {
     var Qu = $("#Qu").val();  //收货人区县
     var xiangXiDiZhi = $("#xiangXiDiZhi").val();   //详细地址
     var phone = $("#phone").val();   //收货人电话号
-    alert(receiverName+Sheng+Shi+Qu+xiangXiDiZhi+phone);
+    // alert(receiverName+Sheng+Shi+Qu+xiangXiDiZhi+phone);
     $.ajax({
         type: "get",    //请求类型
         data: {
@@ -26,6 +26,7 @@ function addAddress(address) {
         dataType: "json",//返回的数据类型
         success: function (data) {
             getAddress();
+            alert(添加成功);
         },
         error: function (data) {
             alert("addAddress-error");
