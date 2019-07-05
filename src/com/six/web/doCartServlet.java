@@ -22,8 +22,8 @@ public class doCartServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         //获取用户id
-//        String userId = (String) request.getSession().getAttribute("userID");
-        String userId = "1234";
+        String userId = (String) request.getSession().getAttribute("userID");
+        //String userId = "1234";
         //获取商品编号
         String goodId = request.getParameter("goodId");
         //获取颜色
